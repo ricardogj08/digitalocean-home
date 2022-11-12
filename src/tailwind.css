@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply w-full rounded border-gray-400 focus:border-blue-500 focus:ring-blue-500;
+    }
+
+    [type='checkbox'], [type='radio'] {
+        @apply text-blue-500 focus:ring-blue-600;
+    }
+}
+
+@layer components {
+    .btn-blue {
+        @apply bg-do-blue-light rounded-lg px-5 py-3 text-white font-bold hover:bg-do-blue-medium active:bg-do-blue-dark;
+    }
+
+    .panel {
+        @apply bg-white rounded-lg shadow-lg px-5 py-5;
+    }
+}
