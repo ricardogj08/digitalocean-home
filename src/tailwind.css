@@ -35,7 +35,21 @@
 
 @layer components {
     .btn-blue {
-        @apply bg-do-blue-light rounded-lg px-5 py-3 text-white font-bold hover:bg-do-blue-medium active:bg-do-blue-dark;
+        @apply px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-medium-dark
+            active:text-sky-400 text-white font-bold focus:outline-dotted focus:outline-1 focus:outline-do-blue-dark;
+    }
+
+    .btn-white {
+        @apply border border-gray-400 px-5 py-3 rounded-lg focus:outline-dotted focus:outline-1 focus:bg-sky-100;
+    }
+
+    .btn-white-blue {
+        @apply px-5 py-3 rounded-lg bg-white active:bg-gray-200 font-medium border text-do-blue-light
+            focus:outline-dotted focus:outline-1 focus:outline-do-blue-lighter border-do-blue-light;
+    }
+
+    .btn-gray {
+        @apply px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg;
     }
 
     .panel {

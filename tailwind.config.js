@@ -3,7 +3,11 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     container: {
-      padding: '1.4rem'
+      // padding: '1.4rem'
+      padding: {
+        DEFAULT: '1.4rem',
+        '2xl': '7rem'
+      }
     },
     extend: {
       fontFamily: {
