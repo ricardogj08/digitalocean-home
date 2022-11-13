@@ -6,86 +6,201 @@
         <link rel="stylesheet" href="./css/styles.css" />
         <title>DigitalOcean</title>
     </head>
-    <body>
-        <!-- Barra de navegación secundaria -->
-        <div class="bg-do-blue-dark text-gray-300 text-sm py-2">
-            <div class="container mx-auto flex justify-between">
-                <div>
-                    <div class="flex items-center">
-                        Boost availability, performance, and reliability with more powerful, upgraded Load Balancers!
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
+    <body class="relative">
+        <div class="fixed z-10 w-full">
+            <!-- Barra de navegación secundaria -->
+            <div class="hidden lg:block bg-do-blue-dark text-gray-300 text-sm py-2">
+                <div class="container mx-auto flex justify-between">
+                    <div>
+                        <div class="flex items-center">
+                            Boost availability, performance, and reliability with more powerful, upgraded Load Balancers!
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-4">
+                        <a href="#" class="bg-do-blue-medium-dark px-3 py-1 rounder text-sky-400 font-bold">
+                            We're Hiring
+                        </a>
+                        <a href="#" class="hover:text-white">Blog</a>
+                        <a href="#" class="hover:text-white">Docs</a>
+                        <a href="#" class="hover:text-white">Get Support</a>
+                        <a href="#" class="hover:text-white">Sales</a>
                     </div>
                 </div>
-                <div class="flex items-center gap-x-4">
-                    <a href="#" class="bg-do-blue-medium-dark px-3 py-1 rounder text-sky-400 font-bold">
-                        We're Hiring
-                    </a>
-                    <a href="#" class="hover:text-white">Blog</a>
-                    <a href="#" class="hover:text-white">Docs</a>
-                    <a href="#" class="hover:text-white">Get Support</a>
-                    <a href="#" class="hover:text-white">Sales</a>
-                </div>
             </div>
-        </div>
-        <!-- Fin de la barra de navegación secundaria -->
+            <!-- Fin de la barra de navegación secundaria -->
 
-        <!-- Barra de navegación principal -->
-        <div class="shadow-md relative z-10">
-            <div class="container mx-auto flex justify-between items-center py-5">
-                <div class="flex items-center gap-x-6 font-medium">
-                    <img src="./images/logo.svg" />
-                    <div class="flex items-center">
-                        <a class="mr-2">Products</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            <!-- Barra de navegación principal móvil -->
+            <div class="lg:hidden bg-white shadow-lg">
+                <div class="container mx-auto flex justify-between items-center py-5">
+                    <div>
+                        <img src="./images/logo.svg" />
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </div>
-                    <div class="flex items-center">
-                        <a class="mr-2">Solutions</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <a>Marketplace</a>
-                    <div class="flex items-center">
-                        <a class="mr-2">Community</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <a>Pricing</a>
-                </div>
-                <div class="flex items-center gap-x-4">
-                    <a href="#" class="border border-gray-400 px-5 py-3 rounded-lg focus:outline focus:outline-dotted focus-outline-1 focus:bg-sky-100">
-                        Log in
-                    </a>
-                    <a href="#" class="btn-blue">
-                        Sing Up
-                    </a>
                 </div>
             </div>
+            <!-- Fin de la barra de navegación principal móvil -->
+
+            <!-- Barra de navegación principal desktop -->
+            <div class="hidden lg:block shadow-md relative z-0 bg-white">
+                <div class="container mx-auto flex justify-between items-center py-5">
+                    <div class="flex items-center gap-x-6 font-medium">
+                        <img src="./images/logo.svg" />
+                        <div class="flex items-center">
+                            <a class="mr-2">Products</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <div class="flex items-center">
+                            <a class="mr-2">Solutions</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <a>Marketplace</a>
+                        <div class="flex items-center">
+                            <a class="mr-2">Community</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <a>Pricing</a>
+                    </div>
+                    <div class="flex items-center gap-x-4">
+                        <a href="#" class="border border-gray-400 px-5 py-3 rounded-lg focus:outline focus:outline-dotted focus-outline-1 focus:bg-sky-100">
+                            Log in
+                        </a>
+                        <a href="#" class="btn-blue">
+                            Sing Up
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Menú desplegable -->
+                <div class="hidden bg-white shadow relative z-10">
+                    <div class="container mx-auto px-16 pt-10">
+                        <div class="font-bold uppercase pb-10">
+                            Our products
+                        </div>
+                        <div class="flex">
+                            <div class="w-1/3">
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Website Hosting
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Easily and reliably host a website
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Web & Mobile Apps
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Quickly build and reliably run your apps
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Video Streaming Hosting
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Create a highly available streaming service
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Cloud VPN
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Quickly set up a fast, reliable, and easy to use VPN
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Big Data Computing
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Run batch and streaming big data workloads
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Startups
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        A cloud partnership to power your startup
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        SaaS Development
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Build your SaaS exactly how you want
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Agency & Web Dev Shops
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        Create powerful websites and applications for your clients
+                                    </p>
+                                </div>
+                                <div class="px-3 py-4 hover:bg-sky-100 rounded-lg group">
+                                    <h3 class="font-medium text-xl pb-3 group-hover:text-do-blue-light">
+                                        Managed Cloud Hosting Providers
+                                    </h3>
+                                    <p class="text-gray-600">
+                                        We make cloud hosting simple and cost-efficient
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="flex border-t border-gray-300 py-2 justify-center items-center text-gray-500">
+                        See solutions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Fin del menú desplegable -->
+            </div>
+            <!-- Fin de la barra de navegación principal desktop -->
         </div>
-        <!-- Fin de la barra de navegación principal -->
 
         <!-- Formulario -->
-        <div style="background-image: url('./images/hero-bg-animation.svg');" class="pt-32 pb-48 bg-center bg-no-repeat bg-cover relative bg-do-blue-lighter">
-            <div class="flex items-center container mx-auto z-0">
-                <div class="w-1/2">
-                    <h1 class="text-6xl font-bold tracking-tighter">
+        <div class="pt-32 gap-y lg:pt-64 lg:pb-48 bg-center bg-no-repeat bg-cover relative bg-do-blue-lighter"
+            style="background-image: url('./images/hero-bg-animation.svg');"
+        >
+            <div class="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row items-center container mx-auto z-0">
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-4xl lg:text-6xl font-bold tracking-tighter">
                         The cloud is complex. We make it simple.
                     </h1>
                     <p class="mt-5 text-2xl font-medium text-gray-500 tracking-tighter">
                         The cloud computing services you need, with the predictable pricing, developer-friendly features, and scalability you’ll love.
                     </p>
                 </div>
-                <div class="w-1/2">
+                <div class="w-full lg:w-1/2">
                     <div class="font-medium mb-4">
                         Welcome to DigitalOcean. Sign up to get started!
                     </div>
                     <form action="">
-                        <div class="flex flex-col gap-y-5 w-4/5">
+                        <div class="flex flex-col gap-y-5 w-full lg:w-4/5">
                             <input type="text" placeholder="First name" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
                             <input type="text" placeholder="Email" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
                             <input type="password" placeholder="Password" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
@@ -108,9 +223,9 @@
 
         <!-- Estadísticas -->
         <div class="py-16 bg-do-blue-lighter">
-            <div class="container mx-auto flex">
+            <div class="container mx-auto gap-y-10 lg:gap-y-0 flex flex-col lg:flex-row">
                 <!-- Card -->
-                <div class="flex w-1/3 gap-x-2">
+                <div class="flex w-full lg:w-1/3 gap-x-2">
                     <div>
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjcyIiB2aWV3Qm94PSIwIDAgNzIgNzIiIHdpZHRoPSI3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiMwMDNmOTkiIHN0cm9rZS13aWR0aD0iMiI+PGNpcmNsZSBjeD0iMzYiIGN5PSIzNiIgZmlsbD0iI2NlZTBmYSIgcj0iMjYiLz48ZWxsaXBzZSBjeD0iMzYiIGN5PSIzNiIgcng9IjEwIiByeT0iMjYiLz48ZWxsaXBzZSBjeD0iMzYiIGN5PSIzNiIgcng9IjEwIiByeT0iMjYiIHRyYW5zZm9ybT0ibWF0cml4KDAgMSAtMSAwIDcyIDApIi8+PGNpcmNsZSBjeD0iNTAuNSIgY3k9IjIxLjUiIGZpbGw9IiNmZmYiIHI9IjEyLjUiLz48cGF0aCBkPSJtNDQgMThzLjc2NTEtMSAyLTEgMiAxIDIgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0ibTU2IDI0Yy0xLjMyNDYgMi4wNTctMy4wNTM0IDMtNS41IDNzLTQuMTc1NC0uOTQzLTUuNS0zIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJtNTMgMThzLjc2NTEtMSAyLTEgMiAxIDIgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjxwYXRoIGQ9Im00MSAxMy0xLTIgMyAuNXoiIGZpbGw9IiMwMDNmOTkiLz48cGF0aCBkPSJtNjAgMzItMS0yIDMgLjV6IiBmaWxsPSIjMDAzZjk5Ii8+PC9zdmc+"
@@ -124,7 +239,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="flex w-1/3 gap-x-2">
+                <div class="flex w-full lg:w-1/3 gap-x-2">
                     <div>
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjcyIiB2aWV3Qm94PSIwIDAgNzIgNzIiIHdpZHRoPSI3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiMwMDNmOTkiIHN0cm9rZS13aWR0aD0iMiI+PGNpcmNsZSBjeD0iMzciIGN5PSI0NyIgZmlsbD0iI2NlZTBmYSIgcj0iMTgiLz48cGF0aCBkPSJtMjguMjMyNCAzMS45NTQ2LTExLTE5LjA1MjYiLz48cGF0aCBkPSJtMzEuNzIyOCA4LTEyLjk5MDQgNy41IDQuNSA3Ljc5NDIgNi4wNjIyLTMuNS4zODQgMi42NjUxIDE0LjcyMjQtOC41LTQuODQ4MS0yLjM5NzEuMzQ4MS01LjM5NzE0LTcuNzk0MiA0LjUwMDA0eiIvPjxlbGxpcHNlIGN4PSIzNi45OTk5IiBjeT0iNDYuOTk5OSIgcng9IjEwIiByeT0iMTgiIHRyYW5zZm9ybT0ibWF0cml4KC0uODY2MDI1NCAuNSAtLjUgLS44NjYwMjU0IDkyLjU0MjcwMyA2OS4yMDMwNTcpIi8+PC9nPjxjaXJjbGUgY3g9IjE2LjczMiIgY3k9IjEyLjAzNiIgZmlsbD0iIzAwM2Y5OSIgcj0iMiIgdHJhbnNmb3JtPSJtYXRyaXgoLjg2NjAyNTQgLS41IC41IC44NjYwMjU0IC0zLjc3NjMzNyA5Ljk3ODUxOCkiLz48cGF0aCBkPSJtNTguMDMxMSAxNi4yNjczYy4xNjExLS40MzU0Ljc3NjctLjQzNTQuOTM3OCAwbDEuMjA2OSAzLjI2MTVjLjA1MDYuMTM2OC4xNTg2LjI0NDguMjk1NC4yOTU0bDMuMjYxNSAxLjIwNjljLjQzNTQuMTYxMS40MzU0Ljc3NjcgMCAuOTM3OGwtMy4yNjE1IDEuMjA2OWMtLjEzNjguMDUwNi0uMjQ0OC4xNTg2LS4yOTU0LjI5NTRsLTEuMjA2OSAzLjI2MTVjLS4xNjExLjQzNTQtLjc3NjcuNDM1NC0uOTM3OCAwbC0xLjIwNjktMy4yNjE1Yy0uMDUwNi0uMTM2OC0uMTU4Ni0uMjQ0OC0uMjk1NC0uMjk1NGwtMy4yNjE1LTEuMjA2OWMtLjQzNTQtLjE2MTEtLjQzNTQtLjc3NjcgMC0uOTM3OGwzLjI2MTUtMS4yMDY5Yy4xMzY4LS4wNTA2LjI0NDgtLjE1ODYuMjk1NC0uMjk1NHoiIGZpbGw9IiNjZWUwZmEiIHN0cm9rZT0iIzAwM2Y5OSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTEwIDMwdjYiIHN0cm9rZT0iIzAwM2Y5OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJtMTMgMzNoLTYiIHN0cm9rZT0iIzAwM2Y5OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4="
@@ -138,7 +253,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="flex w-1/3 gap-x-2">
+                <div class="flex w-full lg:w-1/3 gap-x-2">
                     <div>
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjcyIiB2aWV3Qm94PSIwIDAgNzIgNzIiIHdpZHRoPSI3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im01MS4zMzI3IDU5YzYuNDY2OS00LjcyOTcgMTAuNjY3My0xMi4zNzQzIDEwLjY2NzMtMjEgMC0xNC4zNTk0LTExLjY0MDYtMjYtMjYtMjZzLTI2IDExLjY0MDYtMjYgMjZjMCA4LjYyNTcgNC4yMDA0IDE2LjI3MDMgMTAuNjY3MyAyMXoiIGZpbGw9IiNjZWUwZmEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Im01MS4zMzI3IDU5djFoLjMyNjdsLjI2MzctLjE5Mjh6bS0zMC42NjU0IDAtLjU5MDQuODA3Mi4yNjM3LjE5MjhoLjMyNjd6bTQwLjMzMjctMjFjMCA4LjI5MzItNC4wMzcxIDE1LjY0MzMtMTAuMjU3NiAyMC4xOTI4bDEuMTgwNyAxLjYxNDRjNi43MTMzLTQuOTEgMTEuMDc2OS0xMi44NDkxIDExLjA3NjktMjEuODA3MnptLTI1LTI1YzEzLjgwNzEgMCAyNSAxMS4xOTI5IDI1IDI1aDJjMC0xNC45MTE3LTEyLjA4ODMtMjctMjctMjd6bS0yNSAyNWMwLTEzLjgwNzEgMTEuMTkyOS0yNSAyNS0yNXYtMmMtMTQuOTExNyAwLTI3IDEyLjA4ODMtMjcgMjd6bTEwLjI1NzYgMjAuMTkyOGMtNi4yMjA1LTQuNTQ5NS0xMC4yNTc2LTExLjg5OTYtMTAuMjU3Ni0yMC4xOTI4aC0yYzAgOC45NTgxIDQuMzYzNiAxNi44OTcyIDExLjA3NjkgMjEuODA3MnptLS41OTAzIDEuODA3MmgzMC42NjU0di0yaC0zMC42NjU0eiIgZmlsbD0iIzAwM2Y5OSIvPjxnIHN0cm9rZT0iIzAwM2Y5OSIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJtMzYgMTJ2NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0ibTE3LjYxNTIgMTkuNjE1MiA0LjI0MjcgNC4yNDI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJtNTQuMzg0OCAxOS42MTUyLTQuMjQyNyA0LjI0MjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Im0xMCAzOGg2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJtNTYgMzhoNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0ibTUwLjE0MjYgNTIuMTQyMSA0LjI0MjYgNC4yNDI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJtMjEuODU3NCA1Mi4xNDItNC4yNDI2IDQuMjQyNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0ibTMxLjk3MzMgMzUuNDU3MSAxMS42MjIzLTExLjc3NzhjLjM2MTgtLjM2NjYuOTc0Ni0uMDEyOC44MzguNDgzOGwtNC4zODg3IDE1Ljk1NDEtNC4wMzU4LTIuMzMwMXoiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjM4IiBmaWxsPSIjZmZmIiByPSI2Ii8+PHJlY3QgZmlsbD0iI2ZmZiIgaGVpZ2h0PSI1IiByeD0iMSIgd2lkdGg9IjE2IiB4PSIyOCIgeT0iNDkiLz48cGF0aCBkPSJtMzkgNDl2NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0ibTMzIDQ5djUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvZz48L3N2Zz4="
@@ -154,11 +269,11 @@
         </div>
         <!-- Fin de las estadísticas -->
 
-        <div class="bg-gray-200 py-12">
+        <div class="bg-gray-200 py-12 overflow-x-hidden">
             <!-- Franja 1 -->
             <div class="flex gap-x-5">
                 <!-- Card -->
-                <div class="panel flex w-88 h-48">
+                <div class="-ml-32 shrink-0 panel flex w-88 h-48">
                     <div class="m-auto">
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTUyIDU4IiB3aWR0aD0iMTUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM4YzkyOWQiPjxwYXRoIGQ9Im0xMTMuODA0IDE4LjYxNmgtMi43NjNsLjAwOSAyMC43Njg5aDExLjE3OXYtMi41NjgzaC04LjQxNnoiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMjQuMTQ1IDI1LjI3ODdjMS41OTgtMS4zMjk3IDMuNjQ0LTIuMTI4NSA1Ljg3Ni0yLjEyODUgNC4xMTMgMCA1LjU1OCAyLjI1MTMgNS41NTggNS42MTI1djEwLjYyMjJoLTEuOTQ3bC0uNTAzLTIuMDI5M2MtLjY1OSAxLjQ5MDItMi41NjQgMi40MDk4LTQuNTUzIDIuNDA5OC0yLjk1MSAwLTQuODk4LTEuNjE3MS00Ljg5OC00LjgxOTYgMC0zLjU4MzEgMi40NDktNS4yOTU0IDcuMjg1LTUuMjk1NC41NjUgMCAxLjQ3Ni4wNjM2IDEuOTE1LjE1ODd2LTEuMDE0N2MwLTEuOTY1OS0xLjAwNS0zLjEzOTMtMy4yNjUtMy4xMzkzLTEuOTc5IDAtMy4zNi42NjYxLTQuNDkxIDEuMzMxOXptNS4zMDkgMTEuOTE4NGMxLjU3IDAgMi43MzItLjcyOTQgMy40MjItMS40NTg3di0zLjgzNjhjLS40NzEtLjA5NS0xLjM4MS0uMTU4NC0xLjk0Ni0uMTU4NC0zLjAxNSAwLTQuNDI4Ljk4My00LjQyOCAzLjA0MzkgMCAxLjM2MzYuODQ4IDIuNDEgMi45NTIgMi40MXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTE0MS44NTYgMjQuODQ2OXMxLjMyOS0xLjY5NjYgMy43OTktMS42OTY2YzQuMDUxIDAgNi4zNDMgMy4wMTI0IDYuMzQzIDcuNTQ2NyAwIDUuNzM5My0yLjQ4IDkuMDY4NS03LjYzIDkuMDY4NS0yLjAxIDAtMy44NjMtLjMxNy01LjIxMy0uODg3N2wtLjAwOS0yMC4yNjE3aDEuNDU1IDEuMjQ2bC4wMDkgMy41NTE0em0tLjAwMyAxMi4wMDA2Yy42OTEuMzE3MSAxLjYwMS40NDM5IDIuNjM4LjQ0MzkgMi45ODMgMCA0LjY0Ny0yLjA2MTEgNC42NDctNi40MzY3IDAtMy4wNzU5LTEuMDM2LTQuOTc4My0zLjcwNS00Ljk3ODMtMS40NzYgMC0yLjYzOC41NzA3LTMuNTggMS4zNjM2di45OTg2eiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0ibTgzLjc3NiAyMC44Njc2YzIuNDQ5MyAwIDQuMDE5NC44MjQzIDUuMDU1NyAxLjY0ODhsMS4xODc1LTIuMDc3MWMtMS42MTg2LTEuNDMzMy0zLjc5NTYtMi4yMDM2LTYuMTE3Ni0yLjIwMzYtNS44NzIgMC05Ljk4NTYgMy42MTQ5LTkuOTg1NiAxMC45MDc3IDAgNy42NDE5IDQuNDM3OCAxMC42MjI0IDkuNTE0NiAxMC42MjI0IDIuNTQzNiAwIDQuNzEwMy0uNjAyNCA2LjEyMzMtMS4yMDQ5bC0uMDU3OS04LjE2NDl2LS45NjMyLTEuNjA1MmgtNy41MzYzdjIuNTY4NGg0LjgwNDNsLjA1NzkgNi4xOTg5Yy0uNjI4LjMxNzEtMS43MjcxLjU3MDctMy4yMDI4LjU3MDctNC4wODIyIDAtNi44MTQyLTIuNTkzLTYuODE0Mi04LjA1MzkgMC01LjU0ODggMi44MjYyLTguMjQ0MSA2Ljk3MTEtOC4yNDQxeiIvPjxwYXRoIGQ9Im0xMDMuMjAzIDE4LjYxNmgtMi43MDFsLjAwOSAzLjQ4Nzl2MS40MjcuODMxNiAxLjQ1MTQgOC4zMDc1LjAzMTdjMCAzLjM2MTEgMS40NDQgNS42MTI0IDUuNTU4IDUuNjEyNC41NjggMCAxLjEyNC0uMDUyMSAxLjY2NC0uMTUxMnYtMi40NDg4Yy0uMzkxLjA2MDUtLjgwOC4wOTQ5LTEuMjU2LjA5NDktMi4yNjEgMC0zLjI2Ni0xLjE3MzItMy4yNjYtMy4xMzl2LTguMzA3NWg0LjUyMnYtMi4yODNoLTQuNTIyeiIvPjxwYXRoIGQ9Im05My42NDY1IDM5LjM4NDJoMi43MDA2di0xNS44NTQzaC0yLjcwMDZ6Ii8+PHBhdGggZD0ibTkzLjY0NjUgMjEuMzQyOWgyLjcwMDZ2LTIuNzI3aC0yLjcwMDZ6Ii8+PC9nPjxwYXRoIGQ9Im02Mi4yMjggMzMuMTYwNS0zLjQ4ODQtMTAuODQwOS02LjkxMzYtMjEuNDg1OTUxYy0uMzU1Ni0xLjEwNTM3NC0xLjkwNDQtMS4xMDUzNzQtMi4yNjAyIDBsLTYuOTEzNyAyMS40ODU5NTFoLTIyLjk1NzdsLTYuOTEzOS0yMS40ODU5NTFjLS4zNTU2LTEuMTA1Mzc0LTEuOTA0NC0xLjEwNTM3NC0yLjI2MDIgMGwtNi45MTM1NiAyMS40ODU5NTEtMy40ODgyNDQgMTAuODQwOWMtLjMxODMxLjk4ODguMDMwMzggMi4wNzIuODYzMjg2IDIuNjgzMWwzMC4xOTEzMTggMjIuMTQ5NiAzMC4xOTE2LTIyLjE0OTZjLjgzMjktLjYxMTEgMS4xODE0LTEuNjk0My44NjMzLTIuNjgzMXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtMzEuMTcyMyA1Ny45OTQ1IDExLjQ3ODktMzUuNjczNmgtMjIuOTU3OHoiIGZpbGw9IiNlMjQzMjkiLz48cGF0aCBkPSJtMzEuMTczOCA1Ny45OTUzLTExLjQ3ODktMzUuNjczNWgtMTYuMDg3NDh6IiBmaWxsPSIjZmM2ZDI2Ii8+PHBhdGggZD0ibTMuNjA2ODQgMjIuMzE5OC0zLjQ4ODQxNyAxMC44NDA5Yy0uMzE4MTQyLjk4ODguMDMwMzggMi4wNzIuODYzNDU0IDIuNjgyOWwzMC4xOTEzMjMgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtMy42MDc0MiAyMi4zMjE1aDE2LjA4NzQ4bC02LjkxMzctMjEuNDg1OTc0Yy0uMzU1OC0xLjEwNTU0Ni0xLjkwNDYtMS4xMDU1NDYtMi4yNjAyIDB6IiBmaWxsPSIjZTI0MzI5Ii8+PHBhdGggZD0ibTMxLjE3NzcgNTcuOTk0NSAxMS40Nzg5LTM1LjY3MzVoMTYuMDg3NXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtNTguNzQ0MSAyMi4zMjEgMy40ODg1IDEwLjg0MDljLjMxODEuOTg4OC0uMDMwNCAyLjA3MjEtLjg2MzUgMi42ODNsLTMwLjE5MTQgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtNTguNzM3OSAyMi4zMjA3aC0xNi4wODc1bDYuOTEzNy0yMS40ODU5MDdjLjM1NTgtMS4xMDU1NDUgMS45MDQ2LTEuMTA1NTQ1IDIuMjYwMiAweiIgZmlsbD0iI2UyNDMyOSIvPjwvc3ZnPg=="
@@ -168,7 +283,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex flex-col w-88 h-48 text-sm justify-between">
+                <div class="panel flex flex-col w-88 h-48 text-sm justify-between shrink-0">
                     <div class="flex">
                         <div class="border-r-2 border-gray-300 pr-3">
                             <img src="./images/whatfix-logo.svg" />
@@ -187,7 +302,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex w-88 h-48">
+                <div class="panel flex w-88 h-48 shrink-0">
                     <div class="m-auto">
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTUyIDU4IiB3aWR0aD0iMTUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM4YzkyOWQiPjxwYXRoIGQ9Im0xMTMuODA0IDE4LjYxNmgtMi43NjNsLjAwOSAyMC43Njg5aDExLjE3OXYtMi41NjgzaC04LjQxNnoiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMjQuMTQ1IDI1LjI3ODdjMS41OTgtMS4zMjk3IDMuNjQ0LTIuMTI4NSA1Ljg3Ni0yLjEyODUgNC4xMTMgMCA1LjU1OCAyLjI1MTMgNS41NTggNS42MTI1djEwLjYyMjJoLTEuOTQ3bC0uNTAzLTIuMDI5M2MtLjY1OSAxLjQ5MDItMi41NjQgMi40MDk4LTQuNTUzIDIuNDA5OC0yLjk1MSAwLTQuODk4LTEuNjE3MS00Ljg5OC00LjgxOTYgMC0zLjU4MzEgMi40NDktNS4yOTU0IDcuMjg1LTUuMjk1NC41NjUgMCAxLjQ3Ni4wNjM2IDEuOTE1LjE1ODd2LTEuMDE0N2MwLTEuOTY1OS0xLjAwNS0zLjEzOTMtMy4yNjUtMy4xMzkzLTEuOTc5IDAtMy4zNi42NjYxLTQuNDkxIDEuMzMxOXptNS4zMDkgMTEuOTE4NGMxLjU3IDAgMi43MzItLjcyOTQgMy40MjItMS40NTg3di0zLjgzNjhjLS40NzEtLjA5NS0xLjM4MS0uMTU4NC0xLjk0Ni0uMTU4NC0zLjAxNSAwLTQuNDI4Ljk4My00LjQyOCAzLjA0MzkgMCAxLjM2MzYuODQ4IDIuNDEgMi45NTIgMi40MXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTE0MS44NTYgMjQuODQ2OXMxLjMyOS0xLjY5NjYgMy43OTktMS42OTY2YzQuMDUxIDAgNi4zNDMgMy4wMTI0IDYuMzQzIDcuNTQ2NyAwIDUuNzM5My0yLjQ4IDkuMDY4NS03LjYzIDkuMDY4NS0yLjAxIDAtMy44NjMtLjMxNy01LjIxMy0uODg3N2wtLjAwOS0yMC4yNjE3aDEuNDU1IDEuMjQ2bC4wMDkgMy41NTE0em0tLjAwMyAxMi4wMDA2Yy42OTEuMzE3MSAxLjYwMS40NDM5IDIuNjM4LjQ0MzkgMi45ODMgMCA0LjY0Ny0yLjA2MTEgNC42NDctNi40MzY3IDAtMy4wNzU5LTEuMDM2LTQuOTc4My0zLjcwNS00Ljk3ODMtMS40NzYgMC0yLjYzOC41NzA3LTMuNTggMS4zNjM2di45OTg2eiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0ibTgzLjc3NiAyMC44Njc2YzIuNDQ5MyAwIDQuMDE5NC44MjQzIDUuMDU1NyAxLjY0ODhsMS4xODc1LTIuMDc3MWMtMS42MTg2LTEuNDMzMy0zLjc5NTYtMi4yMDM2LTYuMTE3Ni0yLjIwMzYtNS44NzIgMC05Ljk4NTYgMy42MTQ5LTkuOTg1NiAxMC45MDc3IDAgNy42NDE5IDQuNDM3OCAxMC42MjI0IDkuNTE0NiAxMC42MjI0IDIuNTQzNiAwIDQuNzEwMy0uNjAyNCA2LjEyMzMtMS4yMDQ5bC0uMDU3OS04LjE2NDl2LS45NjMyLTEuNjA1MmgtNy41MzYzdjIuNTY4NGg0LjgwNDNsLjA1NzkgNi4xOTg5Yy0uNjI4LjMxNzEtMS43MjcxLjU3MDctMy4yMDI4LjU3MDctNC4wODIyIDAtNi44MTQyLTIuNTkzLTYuODE0Mi04LjA1MzkgMC01LjU0ODggMi44MjYyLTguMjQ0MSA2Ljk3MTEtOC4yNDQxeiIvPjxwYXRoIGQ9Im0xMDMuMjAzIDE4LjYxNmgtMi43MDFsLjAwOSAzLjQ4Nzl2MS40MjcuODMxNiAxLjQ1MTQgOC4zMDc1LjAzMTdjMCAzLjM2MTEgMS40NDQgNS42MTI0IDUuNTU4IDUuNjEyNC41NjggMCAxLjEyNC0uMDUyMSAxLjY2NC0uMTUxMnYtMi40NDg4Yy0uMzkxLjA2MDUtLjgwOC4wOTQ5LTEuMjU2LjA5NDktMi4yNjEgMC0zLjI2Ni0xLjE3MzItMy4yNjYtMy4xMzl2LTguMzA3NWg0LjUyMnYtMi4yODNoLTQuNTIyeiIvPjxwYXRoIGQ9Im05My42NDY1IDM5LjM4NDJoMi43MDA2di0xNS44NTQzaC0yLjcwMDZ6Ii8+PHBhdGggZD0ibTkzLjY0NjUgMjEuMzQyOWgyLjcwMDZ2LTIuNzI3aC0yLjcwMDZ6Ii8+PC9nPjxwYXRoIGQ9Im02Mi4yMjggMzMuMTYwNS0zLjQ4ODQtMTAuODQwOS02LjkxMzYtMjEuNDg1OTUxYy0uMzU1Ni0xLjEwNTM3NC0xLjkwNDQtMS4xMDUzNzQtMi4yNjAyIDBsLTYuOTEzNyAyMS40ODU5NTFoLTIyLjk1NzdsLTYuOTEzOS0yMS40ODU5NTFjLS4zNTU2LTEuMTA1Mzc0LTEuOTA0NC0xLjEwNTM3NC0yLjI2MDIgMGwtNi45MTM1NiAyMS40ODU5NTEtMy40ODgyNDQgMTAuODQwOWMtLjMxODMxLjk4ODguMDMwMzggMi4wNzIuODYzMjg2IDIuNjgzMWwzMC4xOTEzMTggMjIuMTQ5NiAzMC4xOTE2LTIyLjE0OTZjLjgzMjktLjYxMTEgMS4xODE0LTEuNjk0My44NjMzLTIuNjgzMXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtMzEuMTcyMyA1Ny45OTQ1IDExLjQ3ODktMzUuNjczNmgtMjIuOTU3OHoiIGZpbGw9IiNlMjQzMjkiLz48cGF0aCBkPSJtMzEuMTczOCA1Ny45OTUzLTExLjQ3ODktMzUuNjczNWgtMTYuMDg3NDh6IiBmaWxsPSIjZmM2ZDI2Ii8+PHBhdGggZD0ibTMuNjA2ODQgMjIuMzE5OC0zLjQ4ODQxNyAxMC44NDA5Yy0uMzE4MTQyLjk4ODguMDMwMzggMi4wNzIuODYzNDU0IDIuNjgyOWwzMC4xOTEzMjMgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtMy42MDc0MiAyMi4zMjE1aDE2LjA4NzQ4bC02LjkxMzctMjEuNDg1OTc0Yy0uMzU1OC0xLjEwNTU0Ni0xLjkwNDYtMS4xMDU1NDYtMi4yNjAyIDB6IiBmaWxsPSIjZTI0MzI5Ii8+PHBhdGggZD0ibTMxLjE3NzcgNTcuOTk0NSAxMS40Nzg5LTM1LjY3MzVoMTYuMDg3NXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtNTguNzQ0MSAyMi4zMjEgMy40ODg1IDEwLjg0MDljLjMxODEuOTg4OC0uMDMwNCAyLjA3MjEtLjg2MzUgMi42ODNsLTMwLjE5MTQgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtNTguNzM3OSAyMi4zMjA3aC0xNi4wODc1bDYuOTEzNy0yMS40ODU5MDdjLjM1NTgtMS4xMDU1NDUgMS45MDQ2LTEuMTA1NTQ1IDIuMjYwMiAweiIgZmlsbD0iI2UyNDMyOSIvPjwvc3ZnPg=="
@@ -197,7 +312,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex flex-col w-88 h-48 text-sm justify-between">
+                <div class="panel flex flex-col w-88 h-48 text-sm justify-between shrink-0">
                     <div class="flex">
                         <div class="border-r-2 border-gray-300 pr-3">
                             <img src="./images/whatfix-logo.svg" />
@@ -220,7 +335,7 @@
             <!-- Franja 2 -->
             <div class="flex mt-6 gap-x-5">
                 <!-- Card -->
-                <div class="panel flex flex-col w-88 h-48 text-sm justify-between">
+                <div class="panel flex flex-col w-88 h-48 text-sm justify-between shrink-0">
                     <div class="flex">
                         <div class="border-r-2 border-gray-300 pr-3">
                             <img src="./images/whatfix-logo.svg" />
@@ -239,7 +354,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex w-88 h-48">
+                <div class="panel flex w-88 h-48 shrink-0">
                     <div class="m-auto">
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTUyIDU4IiB3aWR0aD0iMTUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM4YzkyOWQiPjxwYXRoIGQ9Im0xMTMuODA0IDE4LjYxNmgtMi43NjNsLjAwOSAyMC43Njg5aDExLjE3OXYtMi41NjgzaC04LjQxNnoiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMjQuMTQ1IDI1LjI3ODdjMS41OTgtMS4zMjk3IDMuNjQ0LTIuMTI4NSA1Ljg3Ni0yLjEyODUgNC4xMTMgMCA1LjU1OCAyLjI1MTMgNS41NTggNS42MTI1djEwLjYyMjJoLTEuOTQ3bC0uNTAzLTIuMDI5M2MtLjY1OSAxLjQ5MDItMi41NjQgMi40MDk4LTQuNTUzIDIuNDA5OC0yLjk1MSAwLTQuODk4LTEuNjE3MS00Ljg5OC00LjgxOTYgMC0zLjU4MzEgMi40NDktNS4yOTU0IDcuMjg1LTUuMjk1NC41NjUgMCAxLjQ3Ni4wNjM2IDEuOTE1LjE1ODd2LTEuMDE0N2MwLTEuOTY1OS0xLjAwNS0zLjEzOTMtMy4yNjUtMy4xMzkzLTEuOTc5IDAtMy4zNi42NjYxLTQuNDkxIDEuMzMxOXptNS4zMDkgMTEuOTE4NGMxLjU3IDAgMi43MzItLjcyOTQgMy40MjItMS40NTg3di0zLjgzNjhjLS40NzEtLjA5NS0xLjM4MS0uMTU4NC0xLjk0Ni0uMTU4NC0zLjAxNSAwLTQuNDI4Ljk4My00LjQyOCAzLjA0MzkgMCAxLjM2MzYuODQ4IDIuNDEgMi45NTIgMi40MXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTE0MS44NTYgMjQuODQ2OXMxLjMyOS0xLjY5NjYgMy43OTktMS42OTY2YzQuMDUxIDAgNi4zNDMgMy4wMTI0IDYuMzQzIDcuNTQ2NyAwIDUuNzM5My0yLjQ4IDkuMDY4NS03LjYzIDkuMDY4NS0yLjAxIDAtMy44NjMtLjMxNy01LjIxMy0uODg3N2wtLjAwOS0yMC4yNjE3aDEuNDU1IDEuMjQ2bC4wMDkgMy41NTE0em0tLjAwMyAxMi4wMDA2Yy42OTEuMzE3MSAxLjYwMS40NDM5IDIuNjM4LjQ0MzkgMi45ODMgMCA0LjY0Ny0yLjA2MTEgNC42NDctNi40MzY3IDAtMy4wNzU5LTEuMDM2LTQuOTc4My0zLjcwNS00Ljk3ODMtMS40NzYgMC0yLjYzOC41NzA3LTMuNTggMS4zNjM2di45OTg2eiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0ibTgzLjc3NiAyMC44Njc2YzIuNDQ5MyAwIDQuMDE5NC44MjQzIDUuMDU1NyAxLjY0ODhsMS4xODc1LTIuMDc3MWMtMS42MTg2LTEuNDMzMy0zLjc5NTYtMi4yMDM2LTYuMTE3Ni0yLjIwMzYtNS44NzIgMC05Ljk4NTYgMy42MTQ5LTkuOTg1NiAxMC45MDc3IDAgNy42NDE5IDQuNDM3OCAxMC42MjI0IDkuNTE0NiAxMC42MjI0IDIuNTQzNiAwIDQuNzEwMy0uNjAyNCA2LjEyMzMtMS4yMDQ5bC0uMDU3OS04LjE2NDl2LS45NjMyLTEuNjA1MmgtNy41MzYzdjIuNTY4NGg0LjgwNDNsLjA1NzkgNi4xOTg5Yy0uNjI4LjMxNzEtMS43MjcxLjU3MDctMy4yMDI4LjU3MDctNC4wODIyIDAtNi44MTQyLTIuNTkzLTYuODE0Mi04LjA1MzkgMC01LjU0ODggMi44MjYyLTguMjQ0MSA2Ljk3MTEtOC4yNDQxeiIvPjxwYXRoIGQ9Im0xMDMuMjAzIDE4LjYxNmgtMi43MDFsLjAwOSAzLjQ4Nzl2MS40MjcuODMxNiAxLjQ1MTQgOC4zMDc1LjAzMTdjMCAzLjM2MTEgMS40NDQgNS42MTI0IDUuNTU4IDUuNjEyNC41NjggMCAxLjEyNC0uMDUyMSAxLjY2NC0uMTUxMnYtMi40NDg4Yy0uMzkxLjA2MDUtLjgwOC4wOTQ5LTEuMjU2LjA5NDktMi4yNjEgMC0zLjI2Ni0xLjE3MzItMy4yNjYtMy4xMzl2LTguMzA3NWg0LjUyMnYtMi4yODNoLTQuNTIyeiIvPjxwYXRoIGQ9Im05My42NDY1IDM5LjM4NDJoMi43MDA2di0xNS44NTQzaC0yLjcwMDZ6Ii8+PHBhdGggZD0ibTkzLjY0NjUgMjEuMzQyOWgyLjcwMDZ2LTIuNzI3aC0yLjcwMDZ6Ii8+PC9nPjxwYXRoIGQ9Im02Mi4yMjggMzMuMTYwNS0zLjQ4ODQtMTAuODQwOS02LjkxMzYtMjEuNDg1OTUxYy0uMzU1Ni0xLjEwNTM3NC0xLjkwNDQtMS4xMDUzNzQtMi4yNjAyIDBsLTYuOTEzNyAyMS40ODU5NTFoLTIyLjk1NzdsLTYuOTEzOS0yMS40ODU5NTFjLS4zNTU2LTEuMTA1Mzc0LTEuOTA0NC0xLjEwNTM3NC0yLjI2MDIgMGwtNi45MTM1NiAyMS40ODU5NTEtMy40ODgyNDQgMTAuODQwOWMtLjMxODMxLjk4ODguMDMwMzggMi4wNzIuODYzMjg2IDIuNjgzMWwzMC4xOTEzMTggMjIuMTQ5NiAzMC4xOTE2LTIyLjE0OTZjLjgzMjktLjYxMTEgMS4xODE0LTEuNjk0My44NjMzLTIuNjgzMXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtMzEuMTcyMyA1Ny45OTQ1IDExLjQ3ODktMzUuNjczNmgtMjIuOTU3OHoiIGZpbGw9IiNlMjQzMjkiLz48cGF0aCBkPSJtMzEuMTczOCA1Ny45OTUzLTExLjQ3ODktMzUuNjczNWgtMTYuMDg3NDh6IiBmaWxsPSIjZmM2ZDI2Ii8+PHBhdGggZD0ibTMuNjA2ODQgMjIuMzE5OC0zLjQ4ODQxNyAxMC44NDA5Yy0uMzE4MTQyLjk4ODguMDMwMzggMi4wNzIuODYzNDU0IDIuNjgyOWwzMC4xOTEzMjMgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtMy42MDc0MiAyMi4zMjE1aDE2LjA4NzQ4bC02LjkxMzctMjEuNDg1OTc0Yy0uMzU1OC0xLjEwNTU0Ni0xLjkwNDYtMS4xMDU1NDYtMi4yNjAyIDB6IiBmaWxsPSIjZTI0MzI5Ii8+PHBhdGggZD0ibTMxLjE3NzcgNTcuOTk0NSAxMS40Nzg5LTM1LjY3MzVoMTYuMDg3NXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtNTguNzQ0MSAyMi4zMjEgMy40ODg1IDEwLjg0MDljLjMxODEuOTg4OC0uMDMwNCAyLjA3MjEtLjg2MzUgMi42ODNsLTMwLjE5MTQgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtNTguNzM3OSAyMi4zMjA3aC0xNi4wODc1bDYuOTEzNy0yMS40ODU5MDdjLjM1NTgtMS4xMDU1NDUgMS45MDQ2LTEuMTA1NTQ1IDIuMjYwMiAweiIgZmlsbD0iI2UyNDMyOSIvPjwvc3ZnPg=="
@@ -249,7 +364,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex flex-col w-88 h-48 text-sm justify-between">
+                <div class="panel flex flex-col w-88 h-48 text-sm justify-between shrink-0">
                     <div class="flex">
                         <div class="border-r-2 border-gray-300 pr-3">
                             <img src="./images/whatfix-logo.svg" />
@@ -268,7 +383,7 @@
                 <!-- Fin de la card -->
 
                 <!-- Card -->
-                <div class="panel flex w-88 h-48">
+                <div class="panel flex w-88 h-48 shrink-0">
                     <div class="m-auto">
                         <img
                             src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTUyIDU4IiB3aWR0aD0iMTUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM4YzkyOWQiPjxwYXRoIGQ9Im0xMTMuODA0IDE4LjYxNmgtMi43NjNsLjAwOSAyMC43Njg5aDExLjE3OXYtMi41NjgzaC04LjQxNnoiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMjQuMTQ1IDI1LjI3ODdjMS41OTgtMS4zMjk3IDMuNjQ0LTIuMTI4NSA1Ljg3Ni0yLjEyODUgNC4xMTMgMCA1LjU1OCAyLjI1MTMgNS41NTggNS42MTI1djEwLjYyMjJoLTEuOTQ3bC0uNTAzLTIuMDI5M2MtLjY1OSAxLjQ5MDItMi41NjQgMi40MDk4LTQuNTUzIDIuNDA5OC0yLjk1MSAwLTQuODk4LTEuNjE3MS00Ljg5OC00LjgxOTYgMC0zLjU4MzEgMi40NDktNS4yOTU0IDcuMjg1LTUuMjk1NC41NjUgMCAxLjQ3Ni4wNjM2IDEuOTE1LjE1ODd2LTEuMDE0N2MwLTEuOTY1OS0xLjAwNS0zLjEzOTMtMy4yNjUtMy4xMzkzLTEuOTc5IDAtMy4zNi42NjYxLTQuNDkxIDEuMzMxOXptNS4zMDkgMTEuOTE4NGMxLjU3IDAgMi43MzItLjcyOTQgMy40MjItMS40NTg3di0zLjgzNjhjLS40NzEtLjA5NS0xLjM4MS0uMTU4NC0xLjk0Ni0uMTU4NC0zLjAxNSAwLTQuNDI4Ljk4My00LjQyOCAzLjA0MzkgMCAxLjM2MzYuODQ4IDIuNDEgMi45NTIgMi40MXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTE0MS44NTYgMjQuODQ2OXMxLjMyOS0xLjY5NjYgMy43OTktMS42OTY2YzQuMDUxIDAgNi4zNDMgMy4wMTI0IDYuMzQzIDcuNTQ2NyAwIDUuNzM5My0yLjQ4IDkuMDY4NS03LjYzIDkuMDY4NS0yLjAxIDAtMy44NjMtLjMxNy01LjIxMy0uODg3N2wtLjAwOS0yMC4yNjE3aDEuNDU1IDEuMjQ2bC4wMDkgMy41NTE0em0tLjAwMyAxMi4wMDA2Yy42OTEuMzE3MSAxLjYwMS40NDM5IDIuNjM4LjQ0MzkgMi45ODMgMCA0LjY0Ny0yLjA2MTEgNC42NDctNi40MzY3IDAtMy4wNzU5LTEuMDM2LTQuOTc4My0zLjcwNS00Ljk3ODMtMS40NzYgMC0yLjYzOC41NzA3LTMuNTggMS4zNjM2di45OTg2eiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0ibTgzLjc3NiAyMC44Njc2YzIuNDQ5MyAwIDQuMDE5NC44MjQzIDUuMDU1NyAxLjY0ODhsMS4xODc1LTIuMDc3MWMtMS42MTg2LTEuNDMzMy0zLjc5NTYtMi4yMDM2LTYuMTE3Ni0yLjIwMzYtNS44NzIgMC05Ljk4NTYgMy42MTQ5LTkuOTg1NiAxMC45MDc3IDAgNy42NDE5IDQuNDM3OCAxMC42MjI0IDkuNTE0NiAxMC42MjI0IDIuNTQzNiAwIDQuNzEwMy0uNjAyNCA2LjEyMzMtMS4yMDQ5bC0uMDU3OS04LjE2NDl2LS45NjMyLTEuNjA1MmgtNy41MzYzdjIuNTY4NGg0LjgwNDNsLjA1NzkgNi4xOTg5Yy0uNjI4LjMxNzEtMS43MjcxLjU3MDctMy4yMDI4LjU3MDctNC4wODIyIDAtNi44MTQyLTIuNTkzLTYuODE0Mi04LjA1MzkgMC01LjU0ODggMi44MjYyLTguMjQ0MSA2Ljk3MTEtOC4yNDQxeiIvPjxwYXRoIGQ9Im0xMDMuMjAzIDE4LjYxNmgtMi43MDFsLjAwOSAzLjQ4Nzl2MS40MjcuODMxNiAxLjQ1MTQgOC4zMDc1LjAzMTdjMCAzLjM2MTEgMS40NDQgNS42MTI0IDUuNTU4IDUuNjEyNC41NjggMCAxLjEyNC0uMDUyMSAxLjY2NC0uMTUxMnYtMi40NDg4Yy0uMzkxLjA2MDUtLjgwOC4wOTQ5LTEuMjU2LjA5NDktMi4yNjEgMC0zLjI2Ni0xLjE3MzItMy4yNjYtMy4xMzl2LTguMzA3NWg0LjUyMnYtMi4yODNoLTQuNTIyeiIvPjxwYXRoIGQ9Im05My42NDY1IDM5LjM4NDJoMi43MDA2di0xNS44NTQzaC0yLjcwMDZ6Ii8+PHBhdGggZD0ibTkzLjY0NjUgMjEuMzQyOWgyLjcwMDZ2LTIuNzI3aC0yLjcwMDZ6Ii8+PC9nPjxwYXRoIGQ9Im02Mi4yMjggMzMuMTYwNS0zLjQ4ODQtMTAuODQwOS02LjkxMzYtMjEuNDg1OTUxYy0uMzU1Ni0xLjEwNTM3NC0xLjkwNDQtMS4xMDUzNzQtMi4yNjAyIDBsLTYuOTEzNyAyMS40ODU5NTFoLTIyLjk1NzdsLTYuOTEzOS0yMS40ODU5NTFjLS4zNTU2LTEuMTA1Mzc0LTEuOTA0NC0xLjEwNTM3NC0yLjI2MDIgMGwtNi45MTM1NiAyMS40ODU5NTEtMy40ODgyNDQgMTAuODQwOWMtLjMxODMxLjk4ODguMDMwMzggMi4wNzIuODYzMjg2IDIuNjgzMWwzMC4xOTEzMTggMjIuMTQ5NiAzMC4xOTE2LTIyLjE0OTZjLjgzMjktLjYxMTEgMS4xODE0LTEuNjk0My44NjMzLTIuNjgzMXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtMzEuMTcyMyA1Ny45OTQ1IDExLjQ3ODktMzUuNjczNmgtMjIuOTU3OHoiIGZpbGw9IiNlMjQzMjkiLz48cGF0aCBkPSJtMzEuMTczOCA1Ny45OTUzLTExLjQ3ODktMzUuNjczNWgtMTYuMDg3NDh6IiBmaWxsPSIjZmM2ZDI2Ii8+PHBhdGggZD0ibTMuNjA2ODQgMjIuMzE5OC0zLjQ4ODQxNyAxMC44NDA5Yy0uMzE4MTQyLjk4ODguMDMwMzggMi4wNzIuODYzNDU0IDIuNjgyOWwzMC4xOTEzMjMgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtMy42MDc0MiAyMi4zMjE1aDE2LjA4NzQ4bC02LjkxMzctMjEuNDg1OTc0Yy0uMzU1OC0xLjEwNTU0Ni0xLjkwNDYtMS4xMDU1NDYtMi4yNjAyIDB6IiBmaWxsPSIjZTI0MzI5Ii8+PHBhdGggZD0ibTMxLjE3NzcgNTcuOTk0NSAxMS40Nzg5LTM1LjY3MzVoMTYuMDg3NXoiIGZpbGw9IiNmYzZkMjYiLz48cGF0aCBkPSJtNTguNzQ0MSAyMi4zMjEgMy40ODg1IDEwLjg0MDljLjMxODEuOTg4OC0uMDMwNCAyLjA3MjEtLjg2MzUgMi42ODNsLTMwLjE5MTQgMjIuMTQ5NnoiIGZpbGw9IiNmY2EzMjYiLz48cGF0aCBkPSJtNTguNzM3OSAyMi4zMjA3aC0xNi4wODc1bDYuOTEzNy0yMS40ODU5MDdjLjM1NTgtMS4xMDU1NDUgMS45MDQ2LTEuMTA1NTQ1IDIuMjYwMiAweiIgZmlsbD0iI2UyNDMyOSIvPjwvc3ZnPg=="
@@ -361,7 +476,7 @@
                     <div class="w-1/2"></div>
                 </div>
 
-                <div class="flex mt-16">
+                <div class="flex flex-col lg:flex-row mt-16">
                     <div>
                         <div class="font-bold text-4xl">
                             598k
@@ -415,7 +530,7 @@
 
         <!-- Planes -->
         <div class="bg-gray-200 py-28">
-            <div class="container mx-auto flex items-center">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center">
                 <div class="w-1/3 pr-9">
                     <h2 class="text-4xl font-bold">See what you can save</h2>
                     <p class="text-gray-500 font-medium text-xl my-4 tracking-tight">

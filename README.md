@@ -14,13 +14,17 @@ Un clon del home de [DigitalOcean](https://web.archive.org/web/20220122003333/ht
 
 ## Instalación
 
+    git clone https://github.com/ricardogj08/digitalocean-home.git
+    cd digitalocean-home
     npm install
+
+## Ejecución
+
+    npm run serve
 
 ## Comandos
 
     npm run tailwindcss
-
-    npm run serve
 
 ## Referencias
 
