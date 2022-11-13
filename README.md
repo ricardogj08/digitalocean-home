@@ -33,9 +33,11 @@ Un clon del home de [DigitalOcean](https://web.archive.org/web/20220122003333/ht
 * [EDteam - Curso: Tailwind CSS desde cero](https://ed.team/cursos/tailwind)
 * [Repositorio - Curso: Tailwind CSS desde cero](https://github.com/edteamlat/curso-tailwind-css-desde-cero)
 * [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+* [MDN Web Docs - transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
 
 ## Recursos
 
+* [Cubic Bezier](https://cubic-bezier.com/)
 * [Tailwind UI](https://tailwindui.com/)
 * [Headless UI](https://headlessui.com/)
 * [Tailwind Play](https://play.tailwindcss.com/)

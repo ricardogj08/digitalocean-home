@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./*.html'],
+  darkMode: 'media',
   theme: {
     container: {
       // padding: '1.4rem'
@@ -31,6 +32,9 @@ module.exports = {
       },
       width: {
         88: '22rem'
+      },
+      transitionTimingFunction: {
+        'elastic': 'cubic-bezier(.29, 1.01, 1, -0.68)',
       }
     }
   },

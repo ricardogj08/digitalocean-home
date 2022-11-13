@@ -125,8 +125,8 @@
             <!-- Fin del menú de navegación móvil -->
 
             <!-- Barra de navegación principal desktop -->
-            <div class="hidden lg:block shadow-md relative z-0 bg-white">
-                <div class="container mx-auto flex justify-between items-center py-5">
+            <div class="hidden lg:block shadow-md relative z-0 bg-white dark:bg-gray-900">
+                <div class="container mx-auto flex justify-between items-center py-5 dark:text-gray-300">
                     <div class="flex items-center gap-x-6 font-medium">
                         <img src="./images/logo.svg" />
                         <div class="flex items-center">
@@ -270,37 +270,53 @@
         </div>
 
         <!-- Formulario -->
-        <div class="pt-32 gap-y lg:pt-64 lg:pb-48 bg-center bg-no-repeat bg-cover relative bg-do-blue-lighter"
+        <div class="pt-32 gap-y lg:pt-64 lg:pb-48 bg-center bg-no-repeat bg-cover relative bg-do-blue-lighter dark:bg-gray-900"
             style="background-image: url('./images/hero-bg-animation.svg');"
         >
             <div class="flex flex-col gap-y-5 md:gap-y-0 md:flex-row gap-x-8 items-center container mx-auto z-0">
                 <div class="w-full md:w-1/2">
-                    <h1 class="text-4xl md:text-6xl font-bold tracking-tighter">
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tighter dark:text-gray-300">
                         The cloud is complex. We make it simple.
                     </h1>
-                    <p class="mt-5 text-2xl font-medium text-gray-500 tracking-tighter">
+                    <p class="mt-5 text-2xl font-medium text-gray-500 dark:text-gray-400 tracking-tighter">
                         The cloud computing services you need, with the predictable pricing, developer-friendly features, and scalability you’ll love.
                     </p>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <div class="font-medium mb-4">
+                    <div class="font-medium mb-4 dark:text-gray-300">
                         Welcome to DigitalOcean. Sign up to get started!
                     </div>
                     <form action="">
                         <div class="flex flex-col gap-y-5 w-full lg:w-4/5">
-                            <input type="text" placeholder="First name" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
-                            <input type="text" placeholder="Email" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
-                            <input type="password" placeholder="Password" class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input hover:shadow-input-focus focus:shadow-input outline-none" />
+                            <input type="text" placeholder="First name"
+                                class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input
+                                    hover:shadow-input-focus focus:shadow-input outline-none transition-shadow duration-300 delay-300"
+                            />
+                            <input type="text" placeholder="Email"
+                                class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input
+                                    hover:shadow-input-focus focus:shadow-input outline-none transition-shadow duration-300 delay-300"
+                            />
+                            <input type="password" placeholder="Password"
+                                class="border border-gray-400 focus:border-gray-600 px-5 py-4 rounded-lg shadow-input
+                                    hover:shadow-input-focus focus:shadow-input outline-none transition-shadow duration-300 delay-300"
+                            />
                             <div class="flex items-center justify-between">
-                                <input type="submit" value="Deploy in seconds" class="btn-blue w-3/4" />
-                                <button class="px-3 py-3 bg-gray-200 rounded-lg hover:bg-gray-300">
-                                    <img src="./images/google-logo.svg" />
+                                <input type="submit" value="Deploy in seconds"
+                                    class="btn-blue w-3/4 transition duration-1000 duration-1000 lg:delay-300
+                                        lg:delay-1000 hover:scale-110 ease-elastic"
+                                />
+                                <button class="px-3 py-3 bg-gray-200 rounded-lg hover:bg-gray-300
+                                    transition duration-300 delay-300 hover:rotate-12"
+                                >
+                                    <img src="./images/google-logo.svg" class="animate-bounce" />
                                 </button>
-                                <button class="px-3 py-3 bg-gray-200 rounded-lg hover:bg-gray-300">
+                                <button class="px-3 py-3 bg-gray-200 rounded-lg hover:bg-gray-300
+                                    transition duration-300 delay-300 hover:skew-x-12"
+                                >
                                     <img src="./images/github-logo.svg" />
                                 </button>
                             </div>
-                            <div class="text-gray-500">
+                            <div class="text-gray-500 dark:text-gray-400">
                                 By signing up you agree to the
                                 <a href="#" class="underline font-light">
                                     Terms of Service
@@ -512,7 +528,7 @@
                         </p>
                         <a href="#" class="group text-do-blue-light font-cascadia text-lg font-bold flex items-center hover:text-do-blue-medium">
                             Explore our products
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-all duration-300 group-hover:ml-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
                         </a>
@@ -523,7 +539,7 @@
                         </p>
                         <a hrf="#" class="group text-do-blue-light font-cascadia text-lg font-bold flex items-center hover:text-do-blue-medium">
                             Read the docs
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-all duration-300 group-hover:ml-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
                         </a>
@@ -644,7 +660,7 @@
                     </p>
                     <a href="#" class="group text-do-blue-light font-cascadia text-lg font-bold flex items-center hover:text-do-blue-medium">
                         Calculate your savings
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-all duration-300 group-hover:ml-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>

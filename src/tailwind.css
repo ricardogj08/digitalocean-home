@@ -53,6 +53,6 @@
     }
 
     .panel {
-        @apply bg-white rounded-lg shadow-lg px-5 py-5;
+        @apply bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 px-5 py-5;
     }
 }
